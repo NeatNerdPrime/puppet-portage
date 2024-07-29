@@ -197,3 +197,4 @@ Contributors
   * [Vikraman Choudhury](https://github.com/vikraman)
   * [Matthias Saou](https://github.com/thias)
   * [Garrett Honeycutt](http://learnpuppet.com)
+  * [Robin Johnson](https://github.com/robbat2)
