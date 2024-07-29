@@ -1,6 +1,17 @@
 CHANGELOG
 =========
 
+2.5.0
+-----
+2024-07-29
+
+SemVer bumped due to dropping older Ruby support.
+
+* eselect: validate 'show' command before use
+* reduce undefined command warnings
+* min versions:
+  * ruby 2.7.6 to match puppetserver 7.9.2/puppet 7.20.0
+
 2.4.5
 -----
 2017-10-10
