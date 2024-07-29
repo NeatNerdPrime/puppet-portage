@@ -1,6 +1,6 @@
 source ENV['GEM_SOURCE'] || 'https://rubygems.org'
 
-ruby ">= 2.3.1"
+ruby ">= 2.7.6" # puppet/puppetserver 7.9.2
 
 if puppetversion = ENV['PUPPET_GEM_VERSION']
   gem 'puppet', puppetversion, :require => false
