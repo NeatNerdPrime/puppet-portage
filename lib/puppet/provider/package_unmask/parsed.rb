@@ -9,7 +9,8 @@ Puppet::Type.type(:package_unmask).provide(:parsed,
 ) do
 
   desc "The package_unmask provider backed by parsedfile"
-
+  text_line :comment, :match => /^\s*#/
+  text_line :blank, :match => /^\s*$/
   record_line :parsed, :fields => %w{name}, :rts => true do |line|
     Puppet::Provider::PortageFile.process_line(line)
   end

@@ -9,7 +9,8 @@ Puppet::Type.type(:package_use).provide(:parsed,
 ) do
 
   desc "The package_use provider that uses the ParsedFile class"
-
+  text_line :comment, :match => /^\s*#/
+  text_line :blank, :match => /^\s*$/
   record_line :parsed, :fields => %w{name use}, :joiner => ' ', :rts => true do |line|
     Puppet::Provider::PortageFile.process_line(line, :use)
   end
